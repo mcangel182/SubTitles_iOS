@@ -33,15 +33,19 @@ class RestApiManager: NSObject {
     
     func login(username: String, password: String, onCompletion: @escaping (JSON) -> Void) {
         let route = baseURL + "login/"
-        var params = [String: String]()
-        params["usuario"] = username
-        params["contrasenia"] = password
         let postString = "usuario="+username+"&contrasenia="+password
         makeHTTPPostRequest(path: route, postString: postString, onCompletion: { json, err in
             onCompletion(json as JSON)
         })
     }
 
+    func register(username: String, password: String, onCompletion: @escaping (JSON) -> Void) {
+        let route = baseURL + "registro/"
+        let postString = "usuario="+username+"&contrasenia="+password
+        makeHTTPPostRequest(path: route, postString: postString, onCompletion: { json, err in
+            onCompletion(json as JSON)
+        })
+    }
     
     // MARK: Perform a GET Request
     private func makeHTTPGetRequest(path: String, onCompletion: @escaping ServiceResponse) {

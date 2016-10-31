@@ -14,12 +14,14 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var registerBtn: UIButton!
     
     weak var activityIndicatorView: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         loginBtn.layer.cornerRadius = 5
+        registerBtn.layer.cornerRadius = 5
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,13 +34,9 @@ class LogInViewController: UIViewController {
         let password = self.password.text
         
         RestApiManager.sharedInstance.login(username: username!, password: password!, onCompletion: {(json: JSON) in
-            print("JSON: \(json)")
-            print("JSON: \(json.dictionary?["login"])")
-            print("JSON: \(json.array)")
             if (json.dictionary?["login"]?.bool)! {
                 print("se logego")
                 DispatchQueue.main.async {
-                    print("cargo subs")
                     let id = (json.dictionary?["id"]?.int)!
                     let preferences = UserDefaults.standard
                     preferences.set(id, forKey: "userId")
