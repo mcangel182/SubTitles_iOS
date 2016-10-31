@@ -29,6 +29,7 @@ class ObraViewController: UIViewController, UIPickerViewDataSource, UIPickerView
     @IBOutlet weak var downloadBtn: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
+        print("view will appear detalle obra")
         self.tabBarController?.tabBar.isHidden = true
         self.navigationItem.title = obra?.nombre
         super.viewWillAppear(animated)

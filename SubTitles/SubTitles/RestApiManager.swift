@@ -31,6 +31,14 @@ class RestApiManager: NSObject {
         })
     }
     
+    func getRecomendadas(id: String, onCompletion: @escaping (JSON) -> Void) {
+        let route = baseURL + "obrasRecomendadasParaUsuario/" + id + "/"
+        print(route)
+        makeHTTPGetRequest(path: route, onCompletion: { json, err in
+            onCompletion(json as JSON)
+        })
+    }
+    
     func login(username: String, password: String, onCompletion: @escaping (JSON) -> Void) {
         let route = baseURL + "login/"
         let postString = "usuario="+username+"&contrasenia="+password

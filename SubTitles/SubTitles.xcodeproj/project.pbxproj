@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		041164141DC69EA500B4BB9A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041164131DC69EA500B4BB9A /* LogInViewController.swift */; };
 		0418D81D1DC70980009A088D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418D81C1DC70980009A088D /* RegisterViewController.swift */; };
+		0418D8211DC71D1E009A088D /* RecomendadasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418D8201DC71D1E009A088D /* RecomendadasTableViewController.swift */; };
 		410DA9431DBFB038008AA468 /* ObraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410DA9421DBFB038008AA468 /* ObraViewController.swift */; };
 		410DA9451DBFBF06008AA468 /* SubtitlesObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410DA9441DBFBF06008AA468 /* SubtitlesObject.swift */; };
 		4119BA6B1DC2CA480011ED9F /* SubtitlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4119BA6A1DC2CA480011ED9F /* SubtitlesViewController.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		041164131DC69EA500B4BB9A /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		0418D81C1DC70980009A088D /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		0418D8201DC71D1E009A088D /* RecomendadasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecomendadasTableViewController.swift; sourceTree = "<group>"; };
 		410DA9421DBFB038008AA468 /* ObraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
 		410DA9441DBFBF06008AA468 /* SubtitlesObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitlesObject.swift; sourceTree = "<group>"; };
 		4119BA6A1DC2CA480011ED9F /* SubtitlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubtitlesViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				4150603F1DA4A39100AFF208 /* AppDelegate.swift */,
 				041164131DC69EA500B4BB9A /* LogInViewController.swift */,
 				0418D81C1DC70980009A088D /* RegisterViewController.swift */,
+				0418D8201DC71D1E009A088D /* RecomendadasTableViewController.swift */,
 				415A970B1DBEC6720051A8BD /* ObrasTableViewController.swift */,
 				415A970D1DBEE1BA0051A8BD /* ObraTableViewCell.swift */,
 				410DA9421DBFB038008AA468 /* ObraViewController.swift */,
@@ -390,6 +393,7 @@
 				41BDA3241DC238D300E3BB94 /* SavedSubsTableViewController.swift in Sources */,
 				415A96FE1DBEB7560051A8BD /* RestApiManager.swift in Sources */,
 				41BDA3261DC23F6300E3BB94 /* SavedSubObject.swift in Sources */,
+				0418D8211DC71D1E009A088D /* RecomendadasTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

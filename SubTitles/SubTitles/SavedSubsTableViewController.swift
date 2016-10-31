@@ -16,7 +16,6 @@ class SavedSubsTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         print("viewwillappear")
         
-        print(preferences.object(forKey: "userId"))
         if preferences.object(forKey: "userId") == nil{
             self.navigationItem.rightBarButtonItem?.title = "Log In"
         } else {

@@ -33,9 +33,9 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func register(_ sender: Any) {
-        var username = self.username.text
-        var password = self.password.text
-        var passwordConfirmation = self.passwordConfirmation.text
+        let username = self.username.text
+        let password = self.password.text
+        let passwordConfirmation = self.passwordConfirmation.text
         
         if(passwordConfirmation != password){
             DispatchQueue.main.async(execute: {
@@ -53,7 +53,7 @@ class RegisterViewController: UIViewController {
                         let preferences = UserDefaults.standard
                         preferences.set(id, forKey: "userId")
                         preferences.synchronize()
-                        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") 
+                        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home")
                         self.present(viewController, animated: true, completion: nil)
                     }
                     
